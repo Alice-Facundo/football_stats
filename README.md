@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Football Stats
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um aplicativo web para visualizar estatísticas de jogos de futebol por temporada.
 
-## Available Scripts
+## Visão Geral
 
-In the project directory, you can run:
+Este projeto consiste em um aplicativo web que permite aos usuários visualizar estatísticas de jogos de futebol. O frontend é construído com React e o backend com Node.js e Express, com um banco de dados MySQL para armazenar os dados.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * **Seleção de Temporada**: Os usuários podem selecionar uma temporada de futebol (de 2010 a 2023) para visualizar os jogos correspondentes.
+  * **Visualização de Jogos**: Para cada temporada, o aplicativo exibe uma lista de jogos, incluindo as equipes da casa e visitante, data, estádio, placar e árbitro.
+  * **Detalhes da Partida**: Os usuários podem expandir cada jogo para ver detalhes adicionais, como eventos da partida (por exemplo, gols, cartões) e a lista de jogadores de cada time.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estrutura do Projeto
 
-### `npm test`
+O projeto é dividido em duas partes principais:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * **`frontend`**: Contém o aplicativo React.
+  * **`backend`**: Contém o servidor Node.js e Express e a configuração do banco de dados.
 
-### `npm run build`
+## Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * **React**: Biblioteca JavaScript para construir interfaces de usuário.
+  * **Axios**: Cliente HTTP baseado em promessas para fazer requisições ao backend.
+  * **React-Select**: Componente de seletor para React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend
 
-### `npm run eject`
+  * **Node.js**: Ambiente de execução JavaScript do lado do servidor.
+  * **Express**: Framework web para Node.js, usado para criar a API.
+  * **MySQL2**: Cliente MySQL para Node.js, para interagir com o banco de dados.
+  * **Cors**: Middleware para habilitar o Cross-Origin Resource Sharing.
+  * **Dotenv**: Módulo para carregar variáveis de ambiente de um arquivo `.env`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Como Executar o Projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pré-requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * Node.js e npm instalados.
+  * Um servidor de banco de dados MySQL em execução.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend
 
-## Learn More
+1.  **Navegue até a pasta `backend`**:
+    ```bash
+    cd backend
+    ```
+2.  **Instale as dependências**:
+    ```bash
+    npm install
+    ```
+3.  **Configure as variáveis de ambiente**: Crie um arquivo `.env` na pasta `backend` e adicione as seguintes variáveis:
+    ```
+    DB_HOST=seu_host_de_banco_de_dados
+    DB_USER=seu_usuario_de_banco_de_dados
+    DB_PASSWORD=sua_senha_de_banco_de_dados
+    DB_NAME=seu_nome_de_banco_de_dados
+    ```
+4.  **Inicie o servidor**:
+    ```bash
+    node index.js
+    ```
+    O servidor estará em execução em `http://localhost:5000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  **Navegue até a pasta raiz do projeto**.
+2.  **Instale as dependências**:
+    ```bash
+    npm install
+    ```
+3.  **Inicie o aplicativo React**:
+    ```bash
+    npm start
+    ```
+    O aplicativo estará disponível em `http://localhost:3000`.
