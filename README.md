@@ -1,10 +1,6 @@
 # Football Stats
 
-Um aplicativo web para visualizar estatísticas de jogos de futebol por temporada.
-
-## Visão Geral
-
-Este projeto consiste em um aplicativo web que permite aos usuários visualizar estatísticas de jogos de futebol. O frontend é construído com React e o backend com Node.js e Express, com um banco de dados MySQL para armazenar os dados.
+Aplicativo web que permite aos usuários visualizar estatísticas de jogos de futebol. O frontend é construído com React e o backend com Node.js e Express, com um banco de dados MySQL para armazenar os dados.
 
 ## Funcionalidades
 
