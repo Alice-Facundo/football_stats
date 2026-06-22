@@ -1,75 +1,75 @@
 # Football Stats
 
-Aplicativo web que permite aos usuários visualizar estatísticas de jogos de futebol. O frontend é construído com React e o backend com Node.js e Express, com um banco de dados MySQL para armazenar os dados.
+Web application that allows users to view football match statistics. The frontend is built with React and the backend with Node.js and Express, with a MySQL database to store the data.
 
-## Funcionalidades
+## Features
 
-  * **Seleção de Temporada**: Os usuários podem selecionar uma temporada de futebol (de 2010 a 2023) para visualizar os jogos correspondentes.
-  * **Visualização de Jogos**: Para cada temporada, o aplicativo exibe uma lista de jogos, incluindo as equipes da casa e visitante, data, estádio, placar e árbitro.
-  * **Detalhes da Partida**: Os usuários podem expandir cada jogo para ver detalhes adicionais, como eventos da partida (por exemplo, gols, cartões) e a lista de jogadores de cada time.
+  * **Season Selection:** Users can select a football season (from 2010 to 2023) to view the corresponding matches.
+  * **Match Viewing:** For each season, the application displays a list of matches, including home and away teams, date, stadium, score, and referee.
+  * **Match Details:** Users can expand each game to view additional details, such as match events (e.g., goals, cards) and the player lineup for each team.
 
-## Estrutura do Projeto
+## Project Structure
 
-O projeto é dividido em duas partes principais:
+The project is divided into two main parts:
 
-  * **`frontend`**: Contém o aplicativo React.
-  * **`backend`**: Contém o servidor Node.js e Express e a configuração do banco de dados.
+  * **`frontend`**: Contains the React application.
+  * **`backend`**: Contains the Node.js and Express server and the database configuration.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 ### Frontend
 
-  * **React**: Biblioteca JavaScript para construir interfaces de usuário.
-  * **Axios**: Cliente HTTP baseado em promessas para fazer requisições ao backend.
-  * **React-Select**: Componente de seletor para React.
+  * **React:** JavaScript library for building user interfaces.
+  * **Axios:** Promise-based HTTP client for making requests to the backend.
+  * **React-Select:** Select input component for React.
 
 ### Backend
 
-  * **Node.js**: Ambiente de execução JavaScript do lado do servidor.
-  * **Express**: Framework web para Node.js, usado para criar a API.
-  * **MySQL2**: Cliente MySQL para Node.js, para interagir com o banco de dados.
-  * **Cors**: Middleware para habilitar o Cross-Origin Resource Sharing.
-  * **Dotenv**: Módulo para carregar variáveis de ambiente de um arquivo `.env`.
+  * **Node.js:** Server-side JavaScript runtime environment.
+  * **Express:** Web framework for Node.js, used to build the API.
+  * **MySQL2:** MySQL client for Node.js, for database interaction.
+  * **Cors:** Middleware to enable Cross-Origin Resource Sharing.
+  * **Dotenv:** Module to load environment variables from a `.env` file.
 
-## Como Executar o Projeto
+## How to Run the Project
 
-### Pré-requisitos
+### Prerequisites
 
-  * Node.js e npm instalados.
-  * Um servidor de banco de dados MySQL em execução.
+  * Node.js and npm installed.
+  * A running MySQL database server.
 
 ### Backend
 
-1.  **Navegue até a pasta `backend`**:
+1.  **Navigate to the `backend` folder**:
     ```bash
     cd backend
     ```
-2.  **Instale as dependências**:
+2.  **Install dependencies**:
     ```bash
     npm install
     ```
-3.  **Configure as variáveis de ambiente**: Crie um arquivo `.env` na pasta `backend` e adicione as seguintes variáveis:
+3.  **Configure environment variables**: Create a `.env` file in the `backend` folder and add the following variables:
     ```
-    DB_HOST=seu_host_de_banco_de_dados
-    DB_USER=seu_usuario_de_banco_de_dados
-    DB_PASSWORD=sua_senha_de_banco_de_dados
-    DB_NAME=seu_nome_de_banco_de_dados
+    DB_HOST=your_database_host
+    DB_USER=your_database_user
+    DB_PASSWORD=your_database_password
+    DB_NAME=your_database_name
     ```
-4.  **Inicie o servidor**:
+4.  **Start the server**:
     ```bash
     node index.js
     ```
-    O servidor estará em execução em `http://localhost:5000`.
+    The server will be running at `http://localhost:5000`.
 
 ### Frontend
 
-1.  **Navegue até a pasta raiz do projeto**.
-2.  **Instale as dependências**:
+1.  **Navigate to the project root folder**.
+2.  **Install dependencies**:
     ```bash
     npm install
     ```
-3.  **Inicie o aplicativo React**:
+3.  **Start the React application**:
     ```bash
     npm start
     ```
-    O aplicativo estará disponível em `http://localhost:3000`.
+    The application will be available at `http://localhost:3000`.
